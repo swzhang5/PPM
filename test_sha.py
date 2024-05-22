@@ -76,13 +76,8 @@ def main(args):
     
     list_file = []
     with torch.no_grad():
-        e_dic = {}
         maes = []
         mses = []
-        f_maes = []
-        f_mses = []
-        b=0
-        s=0
         for img_path in images:
             image_id = int(img_path.split('/')[-1].split('.')[0].split('_')[-1])
             # load the images
